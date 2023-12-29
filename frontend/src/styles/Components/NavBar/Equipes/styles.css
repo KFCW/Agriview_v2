@@ -1,0 +1,62 @@
+.equipes__container {
+    position: relative;
+    width: calc(100% - 3rem);
+    height: 300px;
+    text-align: center;
+    margin: 0 2rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: .4rem;
+    overflow: hidden;
+    color: #FFF;
+    position: relative;
+    background-image: url("../../../../assets/images/home/equipe.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.equipes__container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+
+.equipes__container h3{
+    position: relative;
+    z-index: 10;
+    margin: 2rem 0 1rem;
+    font-size: clamp(.9rem , 3vw, 1.1rem);
+   color: #000;
+   background-color: #f8f9fa;
+   padding: .4rem 2.3rem;
+   text-transform: uppercase;
+   border-radius: .4rem;
+   font-weight: 400;
+   letter-spacing: 2px;
+   transition: all .3s ease;
+}
+
+.para__team{
+    font-size: clamp(.5rem, 3vw, 1rem);
+    font-weight: 300;
+    color: #f8f9fa;
+    position: relative;
+    z-index: 10;
+}
+
+@media screen and (max-width: 850px) {
+  .equipes__container h3{
+    margin-top: 1rem;
+  }
+  .para__team{
+    font-size: .8rem;
+  }
+}

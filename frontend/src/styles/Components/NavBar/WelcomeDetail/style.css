@@ -1,0 +1,38 @@
+.detail__container {
+    position: relative;
+    width: 100%;
+    height: 8rem;
+    background-color: crimson;
+    line-height: 8rem;
+    text-align: center;
+    background-image: url("../../../../assets/images/home/tracker.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #f1f1f1;
+    overflow: hidden;
+    font-size: 1.2rem;
+  }
+  
+  .detail__container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+  }
+
+  .detail__container h2 {
+    position: relative;
+    z-index: 100;
+    letter-spacing: .3rem;
+    font-weight: bold;
+  }
+
+/* ProductPage design */
+
+.alone__product{
+margin-top: 2rem;
+}
+  

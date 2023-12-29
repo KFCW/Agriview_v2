@@ -1,0 +1,119 @@
+
+img.product__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: .4rem;
+}
+
+.alone__product {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f1faee;
+    margin: 1rem 2rem;
+    width: 58rem;
+    height: auto;
+    position: relative;
+    left: 10%;
+}
+
+.box__img {
+    width: 900px;
+    height: 320px;
+    margin: 1rem;
+}
+
+.right__product__part {
+    margin-left: 1rem;
+}
+
+.right__product__part h2 {
+    margin-top: .9rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    font-family: "Roboto", sans-serif;
+    color: #22223b;
+}
+
+.right__product__part p {
+    margin-bottom: .7rem;
+    color: #343a40;
+}
+
+.right__product__part span {
+    font-size: 1.2rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details button.btn_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6a994e!important;
+    color: #fff;
+    padding: .8rem 1rem;
+    margin: 1rem 0;
+    width: 13rem;
+    border: none;
+    border: 2px solid transparent;
+    border-radius: .4rem;
+    transition: all .3s ease-in-out;
+}
+
+.details button.btn_card:hover {
+    background-color: #ffff!important;
+    color: #6a994e;
+    border: 2px solid #6a994e;
+}
+
+.quantity_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: .7rem 0;
+    row-gap: .3rem;
+}
+
+.quantity_form input {
+    border: none;
+    outline: none;
+    padding: .4rem .5rem;
+    width: 5rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .alone__product {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        left: 0;
+    }
+
+    .box__img {
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+    }
+
+    .right__product__part {
+        margin-left: 0;
+    }
+
+    .details button.btn_card {
+        width: 100%;
+    }
+
+    .quantity_form input {
+        width: 100%;
+    }
+}

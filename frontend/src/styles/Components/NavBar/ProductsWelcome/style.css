@@ -1,0 +1,113 @@
+.box__video{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.box__video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+
+.box__video::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    pointer-events: none;
+  }
+
+.box__content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.box__content h1{
+    font-size: clamp(1rem, 5vw, 2rem);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: #faa916;
+}
+
+.box__content p{
+    font-size: clamp(0.7rem, 5vw, 1rem);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    font-family: "Roboto", sans-serif;
+    color: #dddddd;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+input[type="text"]{
+    border: none;
+    outline: none;
+    width: calc(100vw - 600px);
+    padding: .8rem 1.5rem;
+    padding-right: 8rem;
+    font-family: inherit;
+    color: #000;
+    border-radius: .3rem 0 0 .3rem;
+    font-size: .9rem;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form button  {
+    border: none;
+    border: 2px solid #faa916;
+    padding: .9rem 1.5rem;
+    border-radius: 0 .3rem .3rem 0;
+    background-color: #faa916!important;
+}
+
+@media screen and (max-width: 887px) {
+    input[type="text"]{
+        width: calc(100vw - 200px);
+    }
+    .box__content p{
+        font-size: 1.3rem;
+    }
+    .box__content h1{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    input[type="text"]{
+        width: calc(100vw - 100px);
+    }
+    .box__content h1{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (max-width: 391px) {
+    input[type="text"]{
+        width: calc(100vw - 90px);
+    }
+    .box__content p{
+        font-size: 1rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+}
